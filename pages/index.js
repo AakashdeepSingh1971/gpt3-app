@@ -39,49 +39,54 @@ const Home = () => {
     <div className="root">
       <Head>
         <title>GPT-3 Writer | Aakashdeep</title>
-      </Head>
-      <div className="container">
-        <div className="header">
-          <div className="header-title">
-            <h1> Need some Information</h1>
-          </div>
-          <div className="header-subtitle">
-            <h2>Join the fun make AI your friend</h2>
-          </div>
-          <div className="prompt-container">
-            <textarea
-              className="prompt-box"
-              placeholder="start typing here"
-              value={userInput}
-              onChange={onUserChangedText}
-            />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+              <link rel="manifest" href="/site.webmanifest"/>
 
-            <div className="prompt-buttons">
-              <a
-                className={isGenerating ? 'generate-button loading' : 'generate-button'}
-                onClick={callGenerateEndpoint}
-              >
-
-
-                <div className="generate">
-                  {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
-
-                </div>
-              </a>
-            </div>
-            {apiOutput && (
-              <div className="output">
-                <div className="output-header-container">
-                  <div className="output-header">
-                    <h3>Output</h3>
+              </Head>
+              <div className="container">
+                <div className="header">
+                  <div className="header-title">
+                    <h1> Need some Information</h1>
                   </div>
-                </div>
-                <div className="output-content">
-                  <p>{apiOutput}</p>
-                </div>
-              </div>
-            )}
-            {/* <div className="badge-container grow">
+                  <div className="header-subtitle">
+                    <h2>Join the fun make AI your friend</h2>
+                  </div>
+                  <div className="prompt-container">
+                    <textarea
+                      className="prompt-box"
+                      placeholder="start typing here"
+                      value={userInput}
+                      onChange={onUserChangedText}
+                    />
+
+                    <div className="prompt-buttons">
+                      <a
+                        className={isGenerating ? 'generate-button loading' : 'generate-button'}
+                        onClick={callGenerateEndpoint}
+                      >
+
+
+                        <div className="generate">
+                          {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+
+                        </div>
+                      </a>
+                    </div>
+                    {apiOutput && (
+                      <div className="output">
+                        <div className="output-header-container">
+                          <div className="output-header">
+                            <h3>Output</h3>
+                          </div>
+                        </div>
+                        <div className="output-content">
+                          <p>{apiOutput}</p>
+                        </div>
+                      </div>
+                    )}
+                    {/* <div className="badge-container grow">
               <a
                 href="https://buildspace.so/builds/ai-writer"
                 target="_blank"
@@ -93,12 +98,12 @@ const Home = () => {
                 </div>
               </a>
             </div> */}
-          </div>
-        </div>
-      </div>
-    </div>
-  )
+                  </div>
+                </div>
+              </div>
+            </div>
+            )
 }
 
 
-export default Home;
+            export default Home;
