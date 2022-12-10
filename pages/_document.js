@@ -5,12 +5,12 @@ export default function Document() {
     <Html>
       <Head>
         <meta property="og:title" content="GPT-3 Writer" key="title"/>
-        <meta property="og:description" content="Best app for writing blogs" key="description"/>
+        <meta property="og:description" content="AI Blog Writer" key="description"/>
         <meta
           property="og:image"
-          content="https://cdn.discordapp.com/attachments/820023642121175076/1050951416216297482/image.png"
+          content="https://cdn.buildspace.so/courses/gpt3-writer/project-og.jpg"
         />
-//         <meta name="twitter:card" content="summary_large_image"></meta>
+        <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <body>
         <Main />
