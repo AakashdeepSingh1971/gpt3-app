@@ -10,7 +10,7 @@ export default function Document() {
           property="og:image"
           content="https://cdn.discordapp.com/attachments/820023642121175076/1050951416216297482/image.png"
         />
-        <meta name="twitter:card" content="summary_large_image"></meta>
+//         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <body>
         <Main />
