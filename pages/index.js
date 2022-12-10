@@ -45,7 +45,6 @@ const Home = () => {
           <div className="header-title">
             <h1> Need some Information</h1>
           </div>
-          {/* <h1>Ask our AI </h1> */}
           <div className="header-subtitle">
             <h2>Join the fun make AI your friend</h2>
           </div>
